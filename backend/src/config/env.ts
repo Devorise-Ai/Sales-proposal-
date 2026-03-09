@@ -18,4 +18,6 @@ export const env = {
   jwtSecret: requireEnv('JWT_SECRET'),
   jwtRefreshSecret: requireEnv('JWT_REFRESH_SECRET'),
   frontendUrl: process.env.FRONTEND_URL || 'http://localhost:5173',
+  hfApiToken: requireEnv('HF_API_TOKEN'),
+  hfModel: process.env.HF_MODEL || 'openai/gpt-oss-20b',
 };

@@ -7,6 +7,7 @@ import userRoutes from './routes/user.routes';
 import industryRoutes from './routes/industry.routes';
 import proposalRoutes from './routes/proposal.routes';
 import configRoutes from './routes/config.routes';
+import aiRoutes from './routes/ai.routes';
 import { pool } from './config/database';
 
 const app = express();
@@ -20,6 +21,7 @@ app.use('/api/users', userRoutes);
 app.use('/api/industries', industryRoutes);
 app.use('/api/proposals', proposalRoutes);
 app.use('/api/config', configRoutes);
+app.use('/api/ai', aiRoutes);
 
 // Health check
 app.get('/api/health', async (_req, res) => {
